@@ -63,18 +63,17 @@ function playGame()
         playRound(humanSelection, computerSelection);
     }
     else{
-        if(computerScore < humanScore)
-        {
-            console.log("YOU WIN THE GAME!!!!!!!!!!");
-        }
-        else{
-            console.log("YOU LOSE THE GAME!!!!!!!!!!");
-        }
+        playRound();
     }
-
-
-    return 
+    if(computerScore < humanScore)
+    {
+            console.log("YOU WIN THE GAME!!!!!!!!!!");
+    }
+    else{
+        console.log("YOU LOSE THE GAME!!!!!!!!!!");
+    } 
 }
 
 
 
+playGame();
