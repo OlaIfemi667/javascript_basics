@@ -7,5 +7,6 @@ function getComputerChoice(max)
     else if (choice == 1)
         return "paper";
     else
-        return "scissors"
+        return "scissors";
+    
 }
