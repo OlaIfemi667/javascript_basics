@@ -12,7 +12,7 @@ function getComputerChoice(max)
 function getHumanChoice()
 {
 
-    let choice = prompt(["rock, paper , scissors? ____>"], "default")
+    let choice = prompt("rock, paper , scissors? ____>", "default")
 
     if (choice.toUpperCase() == 'ROCK')
         return "rock";
