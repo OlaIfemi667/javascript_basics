@@ -1,3 +1,11 @@
-let isBoss = confirm("Are you the boss?");
+function getComputerChoice(max)
+{
+    let choice =  Math.floor (Math.random() * max);
 
-alert( isBoss ); // true if OK is pressed
+    if (choice == 0)
+        return "rock";
+    else if (choice == 1)
+        return "paper";
+    else
+        return "scissors"
+}
