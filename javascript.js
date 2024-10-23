@@ -8,5 +8,6 @@ function getComputerChoice(max)
         return "paper";
     else
         return "scissors";
-    
 }
+
+console.log(getComputerChoice(3));
