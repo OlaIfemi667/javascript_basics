@@ -58,10 +58,10 @@ function playGame()
             }        
         }
         round_count++;
-        if (round_count <= 5)
+        if (round_count < 5)
         {
             const humanSelection = getHumanChoice();
-            const computerSelection = getComputerChoice();
+            const computerSelection = getComputerChoice(3);
             playRound(humanSelection, computerSelection);
         }
         else
