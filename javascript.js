@@ -9,5 +9,20 @@ function getComputerChoice(max)
     else
         return "scissors";
 }
+function getHumanChoice()
+{
+    alert("Chose 'r' for rock, 'p' for paper and 's' for scissors");
 
-console.log(getComputerChoice(3));
+    let choice = prompt(["____>"], "default")
+
+    if (choice == 'r')
+        return "rock";
+    else if(choice == 'p')
+        return 'paper';
+    else if(choice == 's')
+        return "scissors";
+    else
+        return getHumanChoice();
+}
+
+getComputerChoice();
